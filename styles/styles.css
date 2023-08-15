@@ -66,14 +66,18 @@ html {
 /*sectionStart*/
 #sectionStart {
   background: url(../img/imgStart.png);
+  background-size: 100% 100%;
   width: 100vw;
   height: 100vh;
+  padding-bottom: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--headerText-color);
-  font-size: 32px;
+  font-size: 64px;
 }
 #sectionStart h1 {
   margin-left: 10px;
+  text-align: center;
+  text-shadow: 5px 5px #4d6d78;
 }
