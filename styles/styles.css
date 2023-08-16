@@ -95,7 +95,8 @@ h2 {
 /* rent */
 #rent {
   height: 100vh;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 75px;
   display: flex;
   flex-direction: column;
@@ -105,7 +106,7 @@ h2 {
   display: flex;
 }
 .yacht {
-  width: 350px;
+  width: 500px;
   height: 100%;
   padding: 20px;
   margin-right: 20px;
@@ -115,6 +116,7 @@ h2 {
 .yacht img {
   width: 100%;
 }
+
 .yacht h3 {
   text-align: center;
   color: #fff;
@@ -129,19 +131,36 @@ h2 {
 #parking {
   height: 100vh;
 
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .infoParking {
+  position: relative;
+
   display: flex;
   align-items: center;
 }
 .infoParking img {
+  position: relative;
+  z-index: 2;
+  margin-top: 25px;
+  margin-left: 25px;
   width: 35%;
 }
+#colorBlockLeft {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 95%;
+  background-color: #bfb8b2;
+}
+
 .infoParking p {
   margin-left: 50px;
   font-size: 16px;
@@ -151,19 +170,36 @@ h2 {
 #restaurant {
   height: 100vh;
 
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .infoRestaurant {
+  position: relative;
+
   display: flex;
   align-items: center;
 }
 .infoRestaurant img {
+  position: relative;
+  z-index: 2;
+  margin-top: 25px;
+  margin-right: 25px;
   width: 35%;
 }
+#colorBlockRight {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 35%;
+  height: 95%;
+  background-color: #bfb8b2;
+}
+
 .infoRestaurant p {
   margin-left: 50px;
   font-size: 16px;
