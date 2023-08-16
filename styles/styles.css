@@ -84,8 +84,6 @@ html {
 }
 
 /* sectionServices */
-#services {
-}
 h2 {
   margin-bottom: 20px;
   font-size: 32px;
@@ -129,6 +127,8 @@ h2 {
 
 /* parking */
 #parking {
+  position: relative;
+
   height: 100vh;
 
   padding-left: 20px;
@@ -137,6 +137,15 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(../img/зфклштп.jpg);
+  background-size: 100% 100%;
+}
+#colorParking {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .infoParking {
   position: relative;
