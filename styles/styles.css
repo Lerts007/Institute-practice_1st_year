@@ -3,7 +3,7 @@
   --header-color: rgb(228, 215, 203, 0.5);
   --pricingBackground-color: #ddd;
   --headerText-color: #fff;
-  --text-color: #000;
+  --text-color: #fff;
   --button-color: #f1c40f;
   --icon-color: darkorange;
 }
@@ -86,6 +86,7 @@ html {
 /* sectionServices */
 h2 {
   margin-bottom: 20px;
+  text-align: center;
   font-size: 32px;
   font-style: italic;
 }
@@ -96,60 +97,74 @@ h2 {
 }
 
 /* rent */
-.blockRent {
-  position: relative;
-  width: 90vw;
+#rent {
+  width: 100vw;
   height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 75px;
+  background: #4d6d78;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blockRent {
+  /* position: relative; */
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
   display: flex;
   justify-content: center;
-  background: #4d6d78;
 }
 .blockRent i {
   position: absolute;
-  top: calc(50% - 23px);
+  top: 50%;
   cursor: pointer;
   height: 46px;
   width: 46px;
   font-size: 1.2rem;
   text-align: center;
   line-height: 46px;
-  background: #fff;
+  background: #ad6767;
   border-radius: 50%;
   transform: translateY(-50%);
 }
 .blockRent i:first-child {
-  left: 8%;
+  background: grey;
+  left: 25px;
 }
 .blockRent i:last-child {
-  right: 8%;
+  right: 25px;
 }
 
-#rent {
-  width: 90vw;
-  height: 100vh;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 75px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .infoRent {
   width: 70%;
-  height: 100%;
+  height: 500px;
+  margin: 40px;
   display: flex;
   align-items: center;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
+
+.infoRent.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.infoRent.dragging .yacht {
+  pointer-events: none;
+}
+
 .yacht {
   cursor: pointer;
 
-  width: 400px;
+  min-width: 350px;
   height: 350px;
   padding: 20px;
   margin-right: 20px;
   background-color: #0f1443;
-  overflow: visible;
   /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
   user-select: none;
   /* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
@@ -159,8 +174,8 @@ h2 {
   margin-right: 0;
 }
 .yacht img {
-  /* Чтобы изображения не перетаскивались мышью */
   width: 100%;
+  /* Чтобы изображения не перетаскивались мышью */
   pointer-events: none;
 }
 
