@@ -84,6 +84,7 @@ const yachts = {
 addYachts(yachts);
 function addYachts(yachts) {
   const container = document.querySelector(".infoRent");
+  const selectYacht = document.querySelector(".selectYacht");
 
   for (const yachtKey in yachts) {
     const yacht = yachts[yachtKey];
@@ -98,6 +99,9 @@ function addYachts(yachts) {
 
     yachtDivH3 = document.createElement("h3");
     yachtDivH3.textContent = yacht["yachtName"];
+
+    yachtOption = document.createElement("option");
+    yachtOption.textContent = yacht["yachtName"];
 
     yachtDivP1 = document.createElement("p");
     yachtDivP1.textContent = `Мощность: ${yacht["power"]} л.с.`;
@@ -114,5 +118,6 @@ function addYachts(yachts) {
     yachtDiv.appendChild(yachtDivP1);
     yachtDiv.appendChild(yachtDivP2);
     yachtDiv.appendChild(yachtDivP3);
+    selectYacht.appendChild(yachtOption);
   }
 }
