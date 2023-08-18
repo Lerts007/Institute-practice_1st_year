@@ -1,0 +1,38 @@
+/* restaurant */
+#restaurant {
+  height: 100vh;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.infoRestaurant {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+.infoRestaurant img {
+  position: relative;
+  z-index: 2;
+  margin-top: 25px;
+  margin-right: 25px;
+  width: 35%;
+}
+#colorBlockRight {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 35%;
+  height: 95%;
+  background-color: #bfb8b2;
+}
+
+.infoRestaurant p {
+  margin-left: 50px;
+  font-size: 16px;
+}

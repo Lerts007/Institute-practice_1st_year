@@ -3,9 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/iconsAll.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./styles/rent.css" />
+    <link rel="stylesheet" href="./styles/parking.css" />
+    <link rel="stylesheet" href="./styles/restaurant.css" />
+    <link rel="stylesheet" href="./styles/modalWindow.css" />
+    <script src="./js/objYacht.js" defer></script>
+    <script src="./js/scroll.js" defer></script>
+    <script src="./js/modalWindow.js" async></script>
+
     <title>Azure Horizons Yacht Club</title>
   </head>
   <body>
@@ -36,38 +43,23 @@
           <div id="rent">
             <h2>Аренда яхт</h2>
             <div class="blockRent">
-              <i id="left" class="fa-solid fa-angle-left"></i>
+              <i id="left" class="fa-solid fa-chevron-left"></i>
               <div class="infoRent">
-                <div id="yacht1" class="yacht" draggable="false">
-                  <img src="./img/Yacht1.jpg" />
-                  <h3>Azimut Atlantis 51</h3>
-                  <p>Мощность: 600 л.с.</p>
-                  <p>Максимальная скорость: 35.00 узл</p>
-                  <p>Кол-во спальных мест: 6 чел.</p>
-                </div>
-                <div id="yacht2" class="yacht" draggable="false">
-                  <img src="./img/Yacht2.jpg" />
-                  <h3>Princess V40</h3>
-                  <p>Мощность: 660 л.с.</p>
-                  <p>Максимальная скорость: 38.00 узл</p>
-                  <p>Кол-во спальных мест: 4 чел.</p>
-                </div>
-                <div id="yacht3" class="yacht" draggable="false">
-                  <img src="./img/Yacht3.jpg" />
-                  <h3>Galeon 460 Fly</h3>
-                  <p>Мощность: 600 л.с.</p>
-                  <p>Максимальная скорость: 30.00 узл</p>
-                  <p>Кол-во спальных мест: 6 чел.</p>
-                </div>
-                <div id="yacht4" class="yacht" draggable="false">
-                  <img src="./img/Yacht4.jpg" />
-                  <h3>Lagoon 400 S2</h3>
-                  <p>Мощность: 400 л.с.</p>
-                  <p>Максимальная скорость: 40.00 узл</p>
-                  <p>Кол-во спальных мест: 8 чел.</p>
-                </div>
               </div>
-              <i id="right" class="fa-solid fa-angle-right"></i>
+              <i id="right" class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="blockButton">
+              <button type="button" onclick="rent()">Аренда</button>
+              <button type="button">Помощь</button>
+              <div class="rentButton rentButtonOff">
+                  <form class="rentButtonForm">
+                    <i id="close" class="fa-solid fa-xmark"></i>
+                    <h2>Оставьте ваши данные, мы с Вами свяжемся!</h2>
+                    <input type="name" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-я]+">
+                    <input type="tel" placeholder="8-924-548-12-54" pattern="[0-9]+">
+                    <button>Отправить</button>
+                  </form>
+              </div>
             </div>
           </div>
           <div id="parking">

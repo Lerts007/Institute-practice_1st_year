@@ -1,0 +1,122 @@
+/* rent */
+#rent {
+  width: 100vw;
+  height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 75px;
+  background: var(--rent-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blockRent {
+  /* position: relative; */
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.blockRent i {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  height: 46px;
+  width: 46px;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 46px;
+  background: var(--button-color);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.blockRent i:first-child {
+  background: grey;
+  left: 25px;
+}
+.blockRent i:last-child {
+  right: 25px;
+}
+
+.infoRent {
+  position: relative;
+  width: 70%;
+  height: 500px;
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  border-radius: 50px;
+}
+
+.infoRent.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.infoRent.dragging .yacht {
+  pointer-events: none;
+}
+
+.yacht {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  min-width: 350px;
+  height: 100%;
+  padding: 20px;
+  margin-right: 20px;
+  background-color: #0f1443;
+  /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
+  user-select: none;
+  /* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
+  touch-action: pan-y;
+  border-radius: 5%;
+}
+.yacht:last-child {
+  margin-right: 0;
+}
+.yacht img {
+  width: 100%;
+  height: 50%;
+  /* Чтобы изображения не перетаскивались мышью */
+  pointer-events: none;
+  border-radius: 5%;
+}
+
+.yacht h3 {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 20px;
+}
+.yacht p {
+  margin-top: 10px;
+  color: var(--text-color);
+  font-size: 16px;
+  font-style: italic;
+}
+.blockButton {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 15vw;
+  height: 5vh;
+  border-radius: 2vh;
+  margin-left: 30px;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-color);
+  background: var(--button-color);
+  border: none;
+}
+button:first-child {
+  margin-left: 0;
+}

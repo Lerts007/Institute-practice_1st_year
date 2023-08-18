@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:ital,wght@0,400;0,600;0,800;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Open+Sans:ital@0;1&display=swap");
 :root {
-  --header-color: rgb(228, 215, 203, 0.5);
-  --pricingBackground-color: #ddd;
-  --headerText-color: #fff;
+  --rentBackground-color: #fff;
   --text-color: #fff;
-  --button-color: #f1c40f;
-  --icon-color: darkorange;
+  --textH2-color: #000;
+  --button-color: #d0a73f;
 }
 
 * {
@@ -14,7 +12,7 @@
   padding: 0;
 }
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Merriweather", serif;
   font-size: 10px;
   font-weight: 400;
   color: var(--text-color);
@@ -22,15 +20,12 @@ html {
 
 /*HEADER*/
 #header {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
   padding: 10px 20px;
   width: 100%;
   height: 75px;
-  background-color: var(--header-color);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 #logo {
@@ -89,191 +84,10 @@ h2 {
   text-align: center;
   font-size: 32px;
   font-style: italic;
+  color: var(--textH2-color);
 }
 #services {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-/* rent */
-#rent {
-  width: 100vw;
-  height: 100vh;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 75px;
-  background: #4d6d78;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.blockRent {
-  /* position: relative; */
-  margin: 0 auto;
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.blockRent i {
-  position: absolute;
-  top: 50%;
-  cursor: pointer;
-  height: 46px;
-  width: 46px;
-  font-size: 1.2rem;
-  text-align: center;
-  line-height: 46px;
-  background: #ad6767;
-  border-radius: 50%;
-  transform: translateY(-50%);
-}
-.blockRent i:first-child {
-  background: grey;
-  left: 25px;
-}
-.blockRent i:last-child {
-  right: 25px;
-}
-
-.infoRent {
-  width: 70%;
-  height: 500px;
-  margin: 40px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
-
-.infoRent.dragging {
-  cursor: grab;
-  scroll-behavior: auto;
-}
-
-.infoRent.dragging .yacht {
-  pointer-events: none;
-}
-
-.yacht {
-  cursor: pointer;
-
-  min-width: 350px;
-  height: 350px;
-  padding: 20px;
-  margin-right: 20px;
-  background-color: #0f1443;
-  /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
-  user-select: none;
-  /* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
-  touch-action: pan-y;
-}
-.yacht:last-child {
-  margin-right: 0;
-}
-.yacht img {
-  width: 100%;
-  /* Чтобы изображения не перетаскивались мышью */
-  pointer-events: none;
-}
-
-.yacht h3 {
-  text-align: center;
-  color: #fff;
-  font-size: 20px;
-}
-.yacht p {
-  color: #fff;
-  font-size: 16px;
-}
-
-/* parking */
-#parking {
-  position: relative;
-
-  height: 100vh;
-
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 75px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url(../img/зфклштп.jpg);
-  background-size: 100% 100%;
-}
-#colorParking {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-.infoParking {
-  position: relative;
-
-  display: flex;
-  align-items: center;
-}
-.infoParking img {
-  position: relative;
-  z-index: 2;
-  margin-top: 25px;
-  margin-left: 25px;
-  width: 35%;
-}
-#colorBlockLeft {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 35%;
-  height: 95%;
-  background-color: #bfb8b2;
-}
-
-.infoParking p {
-  margin-left: 50px;
-  font-size: 16px;
-}
-
-/* restaurant */
-#restaurant {
-  height: 100vh;
-
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 75px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.infoRestaurant {
-  position: relative;
-
-  display: flex;
-  align-items: center;
-}
-.infoRestaurant img {
-  position: relative;
-  z-index: 2;
-  margin-top: 25px;
-  margin-right: 25px;
-  width: 35%;
-}
-#colorBlockRight {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  width: 35%;
-  height: 95%;
-  background-color: #bfb8b2;
-}
-
-.infoRestaurant p {
-  margin-left: 50px;
-  font-size: 16px;
 }
