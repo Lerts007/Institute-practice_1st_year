@@ -69,7 +69,8 @@
   height: 100%;
   padding: 20px;
   margin-right: 20px;
-  background-color: #0f1443;
+  /* background-color: #0f1443; */
+  background: var(--rentBlock-color);
   /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
   user-select: none;
   /* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */

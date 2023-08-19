@@ -32,7 +32,11 @@ button:active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #0f1443;
+  /* background-color: rgb(153, 193, 240); */
+  background-color: rgba(153, 193, 240);
+  background-size: 100% 100%;
+  background-image: url(../img/noise.png);
+
   border-radius: 20px;
 }
 .rentButtonForm i {
@@ -46,7 +50,7 @@ button:active {
 }
 
 .rentButton h2 {
-  color: var(--text-color);
+  color: var(--textModal-color);
 }
 .rentButton input {
   width: 90%;
@@ -54,7 +58,7 @@ button:active {
   font-family: "Merriweather", serif;
   font-size: 20px;
   font-weight: 700;
-  color: var(--text-color);
+  color: var(--textModal-color);
   border: 0;
   border-bottom: 2px solid gray;
   outline: 0;
@@ -71,6 +75,7 @@ button:active {
   font-family: "Merriweather", serif;
   font-size: 15px;
   font-weight: 700;
+  color: var(--textModal-color);
 }
 
 .rentButton button {
@@ -84,7 +89,7 @@ button:active {
   font-family: "Merriweather", serif;
   font-size: 20px;
   font-weight: 700;
-  color: var(--text-color);
+  color: var(--textModal-color);
   cursor: pointer;
   border: none;
   background-color: rgba(255, 255, 255, 0);
