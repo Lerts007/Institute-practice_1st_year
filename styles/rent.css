@@ -2,17 +2,19 @@
 #rent {
   width: 100vw;
   height: 100vh;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 75px;
-  background: var(--rent-color);
+  padding: 20px;
+  background: var(--background-color);
+}
+
+.mainBlockRent {
+  margin-top: 50px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .blockRent {
-  /* position: relative; */
   margin: 0 auto;
   position: relative;
   width: 100%;
@@ -27,13 +29,16 @@
   width: 46px;
   font-size: 1.2rem;
   text-align: center;
-  line-height: 46px;
-  background: var(--button-color);
+  line-height: 40px;
+  color: var(--button-color);
+  background: none;
+  border: 3px solid var(--button-color);
   border-radius: 50%;
   transform: translateY(-50%);
 }
 .blockRent i:first-child {
-  background: grey;
+  border-color: grey;
+  color: grey;
   left: 25px;
 }
 .blockRent i:last-child {
@@ -106,6 +111,12 @@
   justify-content: center;
 }
 
+button,
+button:hover,
+button:active {
+  cursor: pointer;
+}
+
 button {
   width: 15vw;
   height: 5vh;
@@ -114,9 +125,9 @@ button {
   font-family: "Merriweather", serif;
   font-size: 20px;
   font-weight: 700;
-  color: var(--text-color);
-  background: var(--button-color);
-  border: none;
+  color: var(--button-color);
+  background: none;
+  border: 3px solid var(--button-color);
 }
 button:first-child {
   margin-left: 0;

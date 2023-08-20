@@ -1,15 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Open+Sans:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
 :root {
+  --headerText-color: #fff;
   --rentBackground-color: #fff;
+  --background-color: linear-gradient(180deg, #4c5253 50%, #66c1d8 100%);
+  --backgroundModal-color: #101218;
   --rentBlock-color: linear-gradient(
     180deg,
     rgba(0, 184, 204, 0.07) 0%,
     rgba(151, 249, 255, 0.15) 100%
   );
-  --text-color: #000;
+  --textBlack-color: #000;
+  --textWhite-color: #fff;
   --textModal-color: #fff;
-  --textH2-color: #000;
-  --button-color: #d0a73f;
+  --textH2-color: #66c1d8;
+  --button-color: #66c1d8;
 }
 
 * {
@@ -37,8 +42,9 @@ html {
 #logo {
   display: flex;
   align-items: center;
-  font-size: 32px;
-  color: #fff;
+  font-family: "Marck Script", cursive;
+  font-size: 40px;
+  color: var(--headerText-color);
 }
 #logo p {
   margin-left: 10px;
@@ -58,6 +64,8 @@ html {
 }
 #nav-bar a {
   text-decoration: none;
+  font-family: "Marck Script", cursive;
+  font-size: 40px;
   color: var(--headerText-color);
 }
 #nav-bar li:last-child {
@@ -81,14 +89,17 @@ html {
 #sectionStart h1 {
   margin-left: 10px;
   text-align: center;
+  font-family: "Marck Script", cursive;
+
+  color: #fff;
+
   text-shadow: 5px 5px #4d6d78;
 }
 
 /* sectionServices */
 h2 {
-  margin-bottom: 20px;
   text-align: center;
-  font-size: 32px;
+  font-size: 60px;
   font-style: italic;
   color: var(--textH2-color);
 }
@@ -96,4 +107,16 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.headerBlock {
+  width: 50vh;
+  margin: 20px auto 40px;
+}
+
+.headerBlock div {
+  width: 100%;
+  height: 5px;
+  margin-top: 5px;
+  background-color: var(--button-color);
 }

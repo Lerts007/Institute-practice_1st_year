@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="./styles/rent.css" />
     <link rel="stylesheet" href="./styles/parking.css" />
     <link rel="stylesheet" href="./styles/restaurant.css" />
-    <link rel="stylesheet" href="./styles/modalWindow.css" />
+    <link rel="stylesheet" href="./styles/modalWindowRent.css" />
+    <link rel="stylesheet" href="./styles/modalWindowHelp.css" />
     <script src="./js/objYacht.js" defer></script>
     <script src="./js/scroll.js" defer></script>
-    <script src="./js/modalWindow.js" async></script>
+    <script src="./js/modalWindowRent.js" async></script>
+    <script src="./js/modalWindowHelp.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
     <title>Azure Horizons Yacht Club</title>
@@ -42,37 +44,58 @@
       <section id="sectionServices">
         <div id="services">
           <div id="rent">
-            <h2>Аренда яхт</h2>
-            <div class="blockRent">
-              <i id="left" class="fa-solid fa-chevron-left"></i>
-              <div class="infoRent">
-              </div>
-              <i id="right" class="fa-solid fa-chevron-right"></i>
+            <div class="headerBlock">
+              <h2>Аренда яхт</h2>
+              <div></div>
             </div>
-            <div class="blockButton">
-              <button type="button" onclick="rent()">Аренда</button>
-              <button type="button">Помощь</button>
-              <div class="rentButton rentButtonOff">
-                  <form class="rentButtonForm">
-                    <i id="close" class="fa-solid fa-xmark"></i>
+            <div class="mainBlockRent">
+              <div class="blockRent">
+                <i id="left" class="fa-solid fa-chevron-left"></i>
+                <div class="infoRent">
+                </div>
+                <i id="right" class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="blockButton">
+                <button type="button" onclick="rent()">Аренда</button>
+                <button type="button" onclick="help()">Помощь</button>
+                <div class="rentButton formButton rentFormOff">
+                    <form class="rentForm form">
+                      <i id="closeRent" class="fa-solid fa-xmark"></i>
+                      <h2>Оставьте ваши данные, мы с Вами свяжемся!</h2>
+                      <label for="name">Ваше имя:</label>
+                      <input type="name" naem="name" placeholder="Дмитрий" pattern="[A-Za-zА-Яа-я]+" >
+                      <label for="phone">Ваш номер телефона:</label>
+                      <input class="art-stranger" type="tel" name="phone" placeholder="+7(924)548-12-54">
+                      <label for="days">Кол-во дней аренды:</label>
+                      <input type="number" naem="days" placeholder="7" pattern="[0-9]+" >
+                      <label for="date">С какого дня:</label>
+                      <input type="date" naem="date">
+                      <select class="selectYacht"></select>
+                      <button>Отправить</button>
+                    </form>
+                </div>
+                <div class="helpButton formButton helpFormOff">
+                  <form class="helpForm form">
+                    <i id="closeHelp" class="fa-solid fa-xmark"></i>
                     <h2>Оставьте ваши данные, мы с Вами свяжемся!</h2>
                     <label for="name">Ваше имя:</label>
-                    <input type="name" naem="name" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-я]+" >
-                    <label for="phone">Ваше номер телефона:</label>
+                    <input type="name" naem="name" placeholder="Дмитрий" pattern="[A-Za-zА-Яа-я]+" >
+                    <label for="phone">Ваш номер телефона:</label>
                     <input class="art-stranger" type="tel" name="phone" placeholder="+7(924)548-12-54">
-                    <select class="selectYacht">                      
-                      </select>
                     <button>Отправить</button>
                   </form>
+              </div>
               </div>
             </div>
           </div>
           <div id="parking">
-            <div id="colorParking"></div>
-            <h2>Стоянка плавсредств</h2>
+            <div class="headerBlock">
+              <h2 >Стоянка яхт и катеров</h2>
+              <div></div>
+            <p>Полный комплекс услуг по стоянке и обслуживанию водной-спортивной техники</p>
+            </div>
             <div class="infoParking">
-              <img src="./img/parking1.jpg" />
-              <div id="colorBlockLeft"></div>
+
               <p>
                 Марина Яхт-клуба Unityacht рассчитана на 170 судов размером от 5 до 50 м. Глубина
                 марины – от 2 до 8 метров, что позволяет принимать суда даже с большой осадкой.
@@ -95,8 +118,6 @@
                 насладиться видом покачивающихся на волнах яхт, посмотреть выступление музыкантов на 
                 специальной плавучей сцене.
               </p>
-              <img src="./img/parking1.jpg" />
-              <div id="colorBlockRight"></div>
         </div>
       </section>
     </div>

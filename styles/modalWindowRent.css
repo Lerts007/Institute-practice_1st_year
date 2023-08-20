@@ -1,0 +1,103 @@
+.rentFormOn {
+  display: flex;
+}
+.rentFormOff {
+  display: none;
+}
+.formButton {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  position: relative;
+  padding: 20px;
+  width: 50vw;
+  max-width: 650px;
+  height: 75vh;
+  max-height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--backgroundModal-color);
+  border-radius: 20px;
+}
+.form h2 {
+  font-size: 32px;
+}
+.form i {
+  position: absolute;
+  font-size: 2rem;
+  color: #fff;
+  top: 10px;
+  right: 10px;
+}
+.form i:hover {
+  color: grey;
+}
+
+.formButton input {
+  width: 90%;
+  height: 8%;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--textModal-color);
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+
+  background: transparent;
+}
+.formButton input:focus {
+  border: 0;
+  border-bottom: 2px solid #fff;
+}
+.formButton label {
+  width: 90%;
+  margin-top: 25px;
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--textModal-color);
+}
+
+.formButton button {
+  margin-top: 25px;
+}
+
+.selectYacht {
+  width: 90%;
+  height: 10%;
+  margin-top: 25px;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--textModal-color);
+  cursor: pointer;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 2px solid gray;
+}
+.selectYacht:focus {
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+
+.selectYacht option {
+  background-color: #0f1443;
+  border: 0;
+}
+
+.selectYacht option:focus {
+  border: none;
+  border-bottom: 2px solid #fff;
+}

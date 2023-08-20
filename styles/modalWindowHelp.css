@@ -1,0 +1,11 @@
+.helpFormOn {
+  display: flex;
+}
+.helpFormOff {
+  display: none;
+}
+
+.helpForm {
+  width: 50vw;
+  height: 40vh;
+}
