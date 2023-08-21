@@ -74,10 +74,13 @@ button:first-child {
   padding: 10px 20px;
   width: 100%;
   height: 75px;
-  display: flex;
-  justify-content: space-evenly;
 }
-
+.header-main {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
 #logo {
   display: flex;
   align-items: center;
@@ -95,7 +98,6 @@ button:first-child {
 }
 #nav-bar ul {
   display: flex;
-  font-size: 24px;
 }
 #nav-bar li {
   margin-right: 15px;
@@ -103,8 +105,9 @@ button:first-child {
 }
 #nav-bar a {
   text-decoration: none;
-  font-family: "Marck Script", cursive;
-  font-size: 40px;
+  font-family: "Merriweather", serif;
+
+  font-size: 18px;
   color: var(--headerText-color);
 }
 #nav-bar li:last-child {
@@ -127,12 +130,13 @@ button:first-child {
   justify-content: center;
   align-items: center;
   color: var(--headerText-color);
-  font-size: 64px;
+  font-size: 50px;
 }
-#sectionStart h1 {
-  margin-left: 10px;
-  text-align: center;
-  font-family: "Marck Script", cursive;
+.sectionStart-h1 {
+  width: 75%;
+}
+.sectionStart-h1 h1 {
+  text-align: left;
 
   color: #fff;
 
