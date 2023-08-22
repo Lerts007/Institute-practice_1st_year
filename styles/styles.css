@@ -4,20 +4,21 @@
   --headerText-color: #fff;
   --rentBackground-color: #fff;
   --mobalMenuBackground-color: #4c5253;
-  --background-color: linear-gradient(180deg, #4c5253 0%, #66c1d8 100%);
+  /* --background-color: linear-gradient(180deg, #4c5253 0%, #66c1d8 100%); */
+  --background-color: linear-gradient(180deg, #5c6b6e 0%, #73d9f3 100%);
   --backgroundModal-color: #101218;
   --rentBlock-color: linear-gradient(
     180deg,
     rgba(0, 184, 204, 0.07) 0%,
     rgba(151, 249, 255, 0.15) 100%
   );
-  --textHover-color: #66c1d8;
+  --textHover-color: #63d8f5;
   --textBlack-color: #000;
   --textWhite-color: #fff;
   --textModal-color: #fff;
-  --acua-color: #66c1d8;
-  --textH2-color: #66c1d8;
-  --button-color: #66c1d8;
+  --acua-color: #63d8f5;
+  --textH2-color: #63d8f5;
+  --button-color: #63d8f5;
 }
 
 * {
@@ -56,7 +57,9 @@ button:active {
 }
 
 button {
+  min-width: 120px;
   width: 15vw;
+  max-width: 180px;
   height: 5vh;
   border-radius: 2vh;
   margin-left: 30px;

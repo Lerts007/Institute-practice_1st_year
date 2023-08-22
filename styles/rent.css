@@ -79,7 +79,6 @@
   height: 100%;
   padding: 20px;
   margin-right: 20px;
-  /* background-color: #0f1443; */
   background: var(--rentBlock-color);
   /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
   user-select: none;
@@ -116,11 +115,34 @@
   justify-content: center;
 }
 .headerBlockRent {
-  width: 550px;
+  width: 400px;
+}
+.buttonForm {
+  width: 150px;
 }
 
 @media screen and (max-width: 1100px) {
   .headerBlockRent {
     width: 300px;
+  }
+  .mainBlockRent {
+    margin-top: 0;
+  }
+  .blockButton {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .mainBlockRent {
+    margin-top: 0;
+  }
+  .blockButton {
+    margin-top: 0;
+  }
+  .infoRent {
+    height: 500px;
+  }
+  .yacht {
+    width: 200px;
   }
 }

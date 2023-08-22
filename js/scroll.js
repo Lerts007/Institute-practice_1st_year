@@ -20,8 +20,6 @@ const showHidwIcons = () => {
   arrowIcons[0].style.color = carousel.scrollLeft === 0 ? "grey" : "#66c1d8";
   arrowIcons[1].style.borderColor = carousel.scrollLeft === scrollWidth ? "grey" : "#66c1d8";
   arrowIcons[1].style.color = carousel.scrollLeft === scrollWidth ? "grey" : "#66c1d8";
-  console.log(carousel.scrollLeft);
-  console.log(scrollWidth);
 };
 
 const dragStart = (e) => {
