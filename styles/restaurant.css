@@ -1,38 +1,38 @@
 /* restaurant */
 #restaurant {
+  width: 100vw;
   height: 100vh;
-
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 75px;
+}
+.headerBlockRestaurant {
+  width: 350px;
+}
+.restaurant-info {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.restaurant-info-text {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
-.infoRestaurant {
-  position: relative;
-
-  display: flex;
-  align-items: center;
+.restaurant-info-text p {
+  font-size: 2rem;
+  color: var(--textWhite-color);
+  text-indent: 30px;
+  line-height: 2.5rem;
+  letter-spacing: 0.2rem;
+  font-style: italic;
 }
-.infoRestaurant img {
-  position: relative;
-  z-index: 2;
-  margin-top: 25px;
-  margin-right: 25px;
-  width: 35%;
+.restaurant-info-img {
+  width: 50%;
+  height: 100%;
 }
-#colorBlockRight {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  width: 35%;
-  height: 95%;
-  background-color: #bfb8b2;
-}
-
-.infoRestaurant p {
-  margin-left: 50px;
-  font-size: 16px;
+.restaurant-info-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

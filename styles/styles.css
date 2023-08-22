@@ -10,9 +10,11 @@
     rgba(0, 184, 204, 0.07) 0%,
     rgba(151, 249, 255, 0.15) 100%
   );
+  --textHover-color: #66c1d8;
   --textBlack-color: #000;
   --textWhite-color: #fff;
   --textModal-color: #fff;
+  --acua-color: #66c1d8;
   --textH2-color: #66c1d8;
   --button-color: #66c1d8;
 }
@@ -21,6 +23,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 html {
   font-family: "Merriweather", serif;
@@ -110,6 +113,10 @@ button:first-child {
   font-size: 18px;
   color: var(--headerText-color);
 }
+#nav-bar a:hover {
+  color: var(--textHover-color);
+  border-bottom: 2px solid var(--textHover-color);
+}
 #nav-bar li:last-child {
   margin-right: 0;
 }
@@ -121,8 +128,8 @@ button:first-child {
   z-index: 5;
 }
 #sectionStart {
-  background: url(../img/imgStart.png);
-  background-size: 100% 100%;
+  /* background: url(../img/imgStart.png);
+  background-size: 100% 100%; */
   width: 100vw;
   height: 100vh;
   padding-bottom: 20%;
@@ -130,16 +137,32 @@ button:first-child {
   justify-content: center;
   align-items: center;
   color: var(--headerText-color);
-  font-size: 50px;
+}
+.imgBackground {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.imgBackground img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
 }
 .sectionStart-h1 {
+  position: relative;
+  z-index: 5;
   width: 75%;
 }
 .sectionStart-h1 h1 {
   text-align: left;
-
   color: #fff;
-
+  font-size: 5rem;
+  font-style: italic;
+  letter-spacing: 0.5rem;
   text-shadow: 5px 5px #4d6d78;
 }
 
@@ -157,6 +180,8 @@ h2 {
   color: var(--textH2-color);
 }
 .headerBlock {
+  position: relative;
+  z-index: 5;
   width: 50vw;
   margin: 20px auto 40px;
 }

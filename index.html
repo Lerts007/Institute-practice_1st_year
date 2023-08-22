@@ -39,13 +39,15 @@
     </div>
     <div id="main">
       <section id="sectionStart">
+        <div class="imgBackground">
+          <img src="./img/imgStart01.png" />
+        </div>
         <div class="sectionStart-h1">
           <h1>
             Сделайте свой отпуск<br />
-             незабываемым 
+            незабываемым
           </h1>
         </div>
-        
       </section>
       <section id="sectionServices">
         <div id="services">
@@ -57,118 +59,160 @@
             <div class="mainBlockRent">
               <div class="blockRent">
                 <i id="left" class="fa-solid fa-chevron-left"></i>
-                <div class="infoRent">
-                </div>
+                <div class="infoRent"></div>
                 <i id="right" class="fa-solid fa-chevron-right"></i>
               </div>
               <div class="blockButton">
                 <button type="button" onclick="rent()">Аренда</button>
                 <button type="button" onclick="help()">Помощь</button>
                 <div class="rentButton formButton rentFormOff">
-                    <form class="rentForm form">
-                      <i id="closeRent" class="fa-solid fa-xmark"></i>
-                      <h2>Оставьте ваши данные, мы с Вами свяжемся!</h2>
-                      <label for="name">Ваше имя:</label>
-                      <input type="name" naem="name" placeholder="Дмитрий" pattern="[A-Za-zА-Яа-я]+" >
-                      <label for="phone">Ваш номер телефона:</label>
-                      <input class="art-stranger" type="tel" name="phone" placeholder="+7(924)548-12-54">
-                      <label for="days">Кол-во дней аренды:</label>
-                      <input type="number" naem="days" placeholder="7" pattern="[0-9]+" >
-                      <label for="date">С какого дня:</label>
-                      <input type="date" naem="date">
-                      <select class="selectYacht"></select>
-                      <button>Отправить</button>
-                    </form>
+                  <form class="rentForm form">
+                    <i id="closeRent" class="fa-solid fa-xmark"></i>
+                    <h2>Оставьте ваши данные, мы с Вами свяжемся!</h2>
+                    <label for="name">Ваше имя:</label>
+                    <input
+                      type="name"
+                      naem="name"
+                      placeholder="Дмитрий"
+                      pattern="[A-Za-zА-Яа-я]+"
+                    />
+                    <label for="phone">Ваш номер телефона:</label>
+                    <input
+                      class="art-stranger"
+                      type="tel"
+                      name="phone"
+                      placeholder="+7(924)548-12-54"
+                    />
+                    <label for="days">Кол-во дней аренды:</label>
+                    <input type="number" naem="days" placeholder="7" pattern="[0-9]+" />
+                    <label for="date">С какого дня:</label>
+                    <input type="date" naem="date" />
+                    <select class="selectYacht"></select>
+                    <button>Отправить</button>
+                  </form>
                 </div>
                 <div class="helpButton formButton helpFormOff">
                   <form class="helpForm form">
                     <i id="closeHelp" class="fa-solid fa-xmark"></i>
                     <h2>Оставьте ваши данные, мы с Вами свяжемся!</h2>
                     <label for="name">Ваше имя:</label>
-                    <input type="name" naem="name" placeholder="Дмитрий" pattern="[A-Za-zА-Яа-я]+" >
+                    <input
+                      type="name"
+                      naem="name"
+                      placeholder="Дмитрий"
+                      pattern="[A-Za-zА-Яа-я]+"
+                    />
                     <label for="phone">Ваш номер телефона:</label>
-                    <input class="art-stranger" type="tel" name="phone" placeholder="+7(924)548-12-54">
+                    <input
+                      class="art-stranger"
+                      type="tel"
+                      name="phone"
+                      placeholder="+7(924)548-12-54"
+                    />
                     <button>Отправить</button>
                   </form>
-              </div>
+                </div>
               </div>
             </div>
           </div>
           <div id="parking">
+            <div class="imgBackground">
+              <img src="./img/parking.png" />
+            </div>
             <div class="colorBackgraundBlack"></div>
             <div class="headerBlock headerBlockParking">
-              <h2 >Стоянка яхт и катеров</h2>
+              <h2>Стоянка яхт и катеров</h2>
               <div></div>
-              <p>Полный комплекс услуг по стоянке и обслуживанию водной-спортивной техники</p>
+              <p>
+                Полный комплекс услуг по стоянке и обслуживанию водной-спортивной техники
+              </p>
             </div>
             <div class="infoParking">
-              <div class="infoParking-logo">
-                <div class="infoParking-logo-img">
-                  <img src="./img/Admiral.svg" alt="Admiral" />
+              <div class="infoParking-logo-block">
+                <div class="infoParking-logo">
+                  <div class="infoParking-logo-img">
+                    <img src="./img/Admiral.svg" alt="Admiral" />
+                  </div>
                   <div class="infoParking-logo-p">
-                    <p>Квалифицированный персонал</p> 
+                    <p>Квалифицированный персонал</p>
                   </div>
                 </div>
-                <div class="infoParking-logo-img">
-                  <img src="./img/ParkingWinter.svg" alt="ParkingWinter" />
+                <div class="infoParking-logo">
+                  <div class="infoParking-logo-img">
+                    <img src="./img/ParkingWinter.svg" alt="ParkingWinter" />
+                  </div>
                   <div class="infoParking-logo-p">
                     <p>Зимняя стоянка техники</p>
                   </div>
                 </div>
-                <div class="infoParking-logo-img">
-                  <img src="./img/ParkingSummer.svg" alt="ParkingSummer" />
+                <div class="infoParking-logo">
+                  <div class="infoParking-logo-img">
+                    <img src="./img/ParkingSummer.svg" alt="ParkingSummer" />
+                  </div>
                   <div class="infoParking-logo-p">
-                    <p>Площадь гавани более 20   тыс.м2</p>
+                    <p>Площадь гавани более 20 тыс.м2</p>
                   </div>
                 </div>
               </div>
-              <p>
-                Марина Яхт-клуба Unityacht рассчитана на 170 судов размером от 5 до 50 м. Глубина
-                марины – от 2 до 8 метров, что позволяет принимать суда даже с большой осадкой.
-                Причальные сооружения размещены таким образом, что позволяют осуществлять
-                маневрирование внутри гавани даже неподготовленным судоводителям. Собственный
-                подъемный кран позволяет осуществлять спуски и подъемы катеров и яхт водоизмещением
-                до 100 тонн.
-              </p>
+              <div class="infoParking-text">
+                <p>
+                  Марина Яхт-клуба Azure Horizons рассчитана на 170 судов размером от 5 до
+                  50 м. Глубина марины – от 2 до 8 метров, что позволяет принимать суда
+                  даже с большой осадкой. Причальные сооружения размещены таким образом,
+                  что позволяют осуществлять маневрирование внутри гавани даже
+                  неподготовленным судоводителям. Собственный подъемный кран позволяет
+                  осуществлять спуски и подъемы катеров и яхт водоизмещением до 100 тонн.
+                </p>
+              </div>
             </div>
           </div>
         </div>
         <div id="restaurant">
-          <h2>Ресторан</h2>
-            <div class="infoRestaurant">
+          <div class="restaurant-info">
+            <div class="restaurant-info-text">
+              <div class="headerBlock headerBlockRestaurant">
+                <h2>Ресторан</h2>
+                <div></div>
+              </div>
               <p>
-                Здесь можно удобно усесться на плетеном диване и наслаждаться природой. Благодаря 
-                высоким потолкам и большим окнам в ресторане просторно и светло днем, а на отделанной 
-                деревом террасе уютно осенними вечерами. Это место, откуда не хочется уходить. Во время 
-                летнего сезона гости могут погреться на солнце, разместившись на ресторанном пляже, 
-                насладиться видом покачивающихся на волнах яхт, посмотреть выступление музыкантов на 
+                Здесь можно удобно усесться на плетеном диване и наслаждаться природой.
+                Благодаря высоким потолкам и большим окнам в ресторане просторно и светло
+                днем, а на отделанной деревом террасе уютно осенними вечерами. Это место,
+                откуда не хочется уходить. Во время летнего сезона гости могут погреться
+                на солнце, разместившись на ресторанном пляже, насладиться видом
+                покачивающихся на волнах яхт, посмотреть выступление музыкантов на
                 специальной плавучей сцене.
               </p>
+            </div>
+
+            <div class="restaurant-info-img">
+              <img src="./img/restaurant.jpg" alt="ресторан" />
+            </div>
+          </div>
         </div>
       </section>
     </div>
     <div id="footer"></div>
 
-    <script src="js/maska-nomera.js" type="text/javascript" ></script>
+    <script src="js/maska-nomera.js" type="text/javascript"></script>
     <script>
-      $('.art-stranger').mask('+7 (999) 999-99-99');
+      $(".art-stranger").mask("+7 (999) 999-99-99");
 
-      $.fn.setCursorPosition = function(pos) {
+      $.fn.setCursorPosition = function (pos) {
         if ($(this).get(0).setSelectionRange) {
           $(this).get(0).setSelectionRange(pos, pos);
         } else if ($(this).get(0).createTextRange) {
           var range = $(this).get(0).createTextRange();
           range.collapse(true);
-          range.moveEnd('character', pos);
-          range.moveStart('character', pos);
+          range.moveEnd("character", pos);
+          range.moveStart("character", pos);
           range.select();
         }
       };
 
-
-      $('input[type="tel"]').click(function(){
-          $(this).setCursorPosition(4);  // set position number
-        });
+      $('input[type="tel"]').click(function () {
+        $(this).setCursorPosition(4); // set position number
+      });
     </script>
   </body>
 </html>
