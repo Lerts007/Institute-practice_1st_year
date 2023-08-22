@@ -3,6 +3,7 @@
 :root {
   --headerText-color: #fff;
   --rentBackground-color: #fff;
+  --mobalMenuBackground-color: #4c5253;
   --background-color: linear-gradient(180deg, #4c5253 0%, #66c1d8 100%);
   --backgroundModal-color: #101218;
   --rentBlock-color: linear-gradient(
@@ -69,58 +70,6 @@ button {
 button:first-child {
   margin-left: 0;
 }
-
-/*HEADER*/
-#header {
-  position: absolute;
-  z-index: 6;
-  padding: 10px 20px;
-  width: 100%;
-  height: 75px;
-}
-.header-main {
-  width: 75%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-#logo {
-  display: flex;
-  align-items: center;
-  font-family: "Marck Script", cursive;
-  font-size: 40px;
-  color: var(--headerText-color);
-}
-#logo p {
-  margin-left: 10px;
-}
-
-#nav-bar {
-  display: flex;
-  align-items: center;
-}
-#nav-bar ul {
-  display: flex;
-}
-#nav-bar li {
-  margin-right: 15px;
-  list-style-type: none;
-}
-#nav-bar a {
-  text-decoration: none;
-  font-family: "Merriweather", serif;
-
-  font-size: 18px;
-  color: var(--headerText-color);
-}
-#nav-bar a:hover {
-  color: var(--textHover-color);
-  border-bottom: 2px solid var(--textHover-color);
-}
-#nav-bar li:last-child {
-  margin-right: 0;
-}
-
 /* MAIN */
 /* sectionStart */
 #main {
@@ -175,7 +124,7 @@ button:first-child {
 }
 h2 {
   text-align: center;
-  font-size: 60px;
+  font-size: 6rem;
   font-style: italic;
   color: var(--textH2-color);
 }
@@ -191,4 +140,15 @@ h2 {
   height: 5px;
   margin-top: 5px;
   background-color: var(--button-color);
+}
+
+@media screen and (max-width: 1100px) {
+  .sectionStart-h1 {
+    margin-bottom: 200px;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 900px) {
 }
