@@ -42,3 +42,17 @@
     width: 250px;
   }
 }
+@media screen and (max-width: 650px) {
+  .restaurant-info {
+    flex-direction: column;
+  }
+  .restaurant-info-img {
+    display: none;
+  }
+  .restaurant-info-text {
+    width: 100%;
+  }
+  .restaurant-info-text p {
+    font-size: 1.5rem;
+  }
+}

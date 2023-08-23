@@ -43,11 +43,6 @@
   color: var(--textWhite-color);
   font-size: 2rem;
 }
-.infoParking-logo-block {
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
-}
 .infoParking-logo {
   width: 250px;
   margin-right: 20px;
@@ -55,6 +50,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+.infoParking-logo-block {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 .infoParking-logo:last-child {
   margin-right: 0;
@@ -69,7 +69,8 @@
 .infoParking-logo-img img {
   width: 158px;
   height: 121px;
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(42deg) brightness(108%) contrast(101%);
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(42deg) brightness(108%)
+    contrast(101%);
 }
 .infoParking-logo-p {
   width: 100%;
@@ -104,6 +105,30 @@
     width: 180px;
   }
   .infoParking-logo-p p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .headerBlockParking {
+    width: 350px;
+  }
+  .headerBlockParking p {
+    font-size: 1.5rem;
+  }
+  .infoParking-logo-block {
+    flex-wrap: wrap;
+  }
+  .infoParking-logo {
+    width: 200px;
+  }
+  .infoParking-text {
+    display: none;
+  }
+  .infoParking-logo-img img {
+    width: 80px;
+    height: 80px;
+  }
+  .infoParking-text p {
     font-size: 1.5rem;
   }
 }

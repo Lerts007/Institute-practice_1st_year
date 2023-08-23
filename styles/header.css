@@ -105,3 +105,8 @@
     color: #fff;
   }
 }
+@media screen and (max-width: 650px) {
+  .nav-bar-mobile-block {
+    width: 50%;
+  }
+}

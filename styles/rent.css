@@ -10,6 +10,11 @@
   flex-direction: column;
   justify-content: center;
 }
+#rent button {
+  min-width: 120px;
+  width: 15vw;
+  max-width: 180px;
+}
 
 .mainBlockRent {
   margin-top: 50px;
@@ -144,5 +149,30 @@
   }
   .yacht {
     width: 200px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .infoRent {
+    height: 400px;
+  }
+  .yacht {
+    min-width: 250px;
+  }
+  .headerBlockRent {
+    width: 225px;
+  }
+  .yacht p {
+    font-size: 1.4rem;
+  }
+  .blockRent i {
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+  }
+  .blockRent i:first-child {
+    left: 5px;
+  }
+  .blockRent i:last-child {
+    right: 5px;
   }
 }

@@ -6,7 +6,7 @@ const bodyMenuBlock = document.getElementsByTagName("body")[0];
 
 function openMenu() {
   mobalMenu.style.display = "flex";
-  closeMobalMenu.style.display = "flex";
+  closeMobalMenu.style.display = "block";
   openMobalMenu.style.display = "none";
   bodyMenuBlock.style.overflow = "hidden";
 }
