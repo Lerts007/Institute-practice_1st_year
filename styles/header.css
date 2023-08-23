@@ -110,3 +110,14 @@
     width: 50%;
   }
 }
+@media screen and (max-width: 550px) {
+  .icon-menu {
+    margin-top: 13px;
+    width: 30px;
+    height: 30px;
+  }
+  .icon-menu i {
+    font-size: 30px;
+    color: #fff;
+  }
+}
