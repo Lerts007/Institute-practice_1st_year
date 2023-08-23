@@ -77,8 +77,6 @@ button:first-child {
   z-index: 5;
 }
 #sectionStart {
-  /* background: url(../img/imgStart.png);
-  background-size: 100% 100%; */
   width: 100vw;
   height: 100vh;
   padding-bottom: 20%;
@@ -143,6 +141,15 @@ h2 {
 }
 
 @media screen and (max-width: 1100px) {
+  .backgroungColorPage {
+    height: calc(4 * 850px);
+  }
+  #sectionStart {
+    height: 850px;
+  }
+  #sectionStart .imgBackground {
+    height: 850px;
+  }
   .sectionStart-h1 {
     margin-bottom: 200px;
   }
