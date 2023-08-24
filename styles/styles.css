@@ -41,12 +41,12 @@ html {
 }
 
 .backgroungColorPage {
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 400vh;
+  height: 500vh;
   background: var(--background-color);
 }
 
