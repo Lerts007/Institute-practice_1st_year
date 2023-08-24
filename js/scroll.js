@@ -16,10 +16,12 @@ arrowIcons.forEach((icon) => {
 
 const showHidwIcons = () => {
   let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
-  arrowIcons[0].style.borderColor = carousel.scrollLeft === 0 ? "grey" : "#63d8f5";
-  arrowIcons[0].style.color = carousel.scrollLeft === 0 ? "grey" : "#63d8f5";
-  arrowIcons[1].style.borderColor = carousel.scrollLeft === scrollWidth ? "grey" : "#63d8f5";
-  arrowIcons[1].style.color = carousel.scrollLeft === scrollWidth ? "grey" : "#63d8f5";
+  arrowIcons[0].style.borderColor = carousel.scrollLeft === 0 ? "grey" : "#66c1d8";
+  arrowIcons[0].style.color = carousel.scrollLeft === 0 ? "grey" : "#66c1d8";
+  arrowIcons[1].style.borderColor = carousel.scrollLeft === scrollWidth - 1 ? "grey" : "#66c1d8";
+  arrowIcons[1].style.color = carousel.scrollLeft === scrollWidth - 1 ? "grey" : "#66c1d8";
+  console.log(carousel.scrollLeft);
+  console.log(scrollWidth);
 };
 
 const dragStart = (e) => {
