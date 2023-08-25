@@ -33,7 +33,7 @@
 .aboutUs-container-logo {
   grid-column: 2 / 2;
   grid-row: 1 / span 2;
-  display: flex;
+  display: girdпше;
   justify-content: center;
   align-items: center;
 }
