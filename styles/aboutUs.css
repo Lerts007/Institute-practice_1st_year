@@ -19,8 +19,10 @@
 
 .aboutUs-container {
   display: grid;
-  grid-template-columns: 1fr 200px 1fr;
+  grid-template-columns: 500px 200px 500px;
   grid-template-rows: repeat(2, 200px);
+  align-items: center;
+  justify-content: center;
 }
 
 .aboutUs-container h3 {
