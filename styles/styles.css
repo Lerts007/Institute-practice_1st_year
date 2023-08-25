@@ -41,7 +41,7 @@ html {
 }
 
 .backgroungColorPage {
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
@@ -77,9 +77,9 @@ button:first-child {
   z-index: 5;
 }
 #sectionStart {
+  position: relative;
   width: 100vw;
   height: 100vh;
-  padding-bottom: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,8 +90,8 @@ button:first-child {
   z-index: 1;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 .imgBackground img {
   width: 100%;
@@ -139,10 +139,18 @@ h2 {
   margin-top: 5px;
   background-color: var(--button-color);
 }
+@media screen and (max-height: 850px) {
+  .backgroungColorPage {
+    height: calc(890px + 850px * 3);
+  }
+  #sectionStart {
+    height: 850px;
+  }
+}
 
 @media screen and (max-width: 1100px) {
   .backgroungColorPage {
-    height: calc(4 * 850px);
+    height: calc(850px * 4);
   }
   #sectionStart {
     height: 850px;
@@ -160,6 +168,15 @@ h2 {
 @media screen and (max-width: 650px) {
   .sectionStart-h1 h1 {
     font-size: 3rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .sectionStart-h1 h1 {
+    font-size: 2.5rem;
   }
   h2 {
     font-size: 3rem;
