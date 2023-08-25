@@ -2,6 +2,7 @@
 #restaurant {
   width: 100vw;
   height: 100vh;
+  background: #fff;
 }
 .headerBlockRestaurant {
   width: 350px;
@@ -21,7 +22,7 @@
 }
 .restaurant-info-text p {
   font-size: 2rem;
-  color: var(--textWhite-color);
+  color: var(--textBlack-color);
   text-indent: 30px;
   line-height: 2.5rem;
   letter-spacing: 0.2rem;

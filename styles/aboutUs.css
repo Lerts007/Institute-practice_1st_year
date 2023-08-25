@@ -2,19 +2,13 @@
   position: relative;
   z-index: 5;
   width: 100vw;
-  height: 50vh;
+  height: 650px;
   padding: 20px;
-  /* background: #fff; */
+  background: #fff;
 }
 
 .headerBlockAboutUs {
   width: 300px;
-}
-.aboutUs-container-info {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  justify-content: center;
 }
 
 .aboutUs-container {
@@ -22,20 +16,36 @@
   grid-template-columns: 500px 200px 500px;
   grid-template-rows: repeat(2, 200px);
   align-items: center;
+  justify-items: center;
   justify-content: center;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 
-.aboutUs-container h3 {
+.aboutUs-container-info {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+.aboutUs-container-info img {
+  width: 50px;
+  height: 50px;
+  margin: 0 20px;
+}
+.aboutUs-container-2,
+.aboutUs-container-4 {
+  flex-direction: row-reverse;
+}
+.aboutUs-container-info h3 {
   margin-bottom: 10px;
   font-size: 20px;
 }
-.aboutUs-container p {
+.aboutUs-container-info p {
   font-size: 18px;
+  text-align: justify;
 }
 .aboutUs-container-logo {
   grid-column: 2 / 2;
   grid-row: 1 / span 2;
-  display: girdпше;
-  justify-content: center;
-  align-items: center;
 }
