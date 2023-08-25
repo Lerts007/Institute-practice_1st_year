@@ -55,7 +55,7 @@
       </div>
     </div>
     <div id="main">
-      <section id="sectionStart">
+      <div id="sectionStart">
         <div class="imgBackground">
           <img src="./img/imgStart01.png" />
         </div>
@@ -65,204 +65,197 @@
             незабываемым
           </h1>
         </div>
-      </section>
-      <section id="sectionServices">
-        <div id="services">
-          <div id="rent">
-            <div class="headerBlock headerBlockRent">
-              <h2>Аренда яхт</h2>
-              <div></div>
-            </div>
-            <div class="mainBlockRent">
-              <div class="blockRent">
-                <i id="left" class="fa-solid fa-chevron-left"></i>
-                <div class="infoRent"></div>
-                <i id="right" class="fa-solid fa-chevron-right"></i>
-              </div>
-            </div>
-            <div class="blockButton">
-              <button type="button" onclick="rent()">Аренда</button>
-              <button type="button" onclick="help()">Помощь</button>
-              <div class="rentButton formButton rentFormOff">
-                <form class="rentForm form">
-                  <i id="closeRent" class="fa-solid fa-xmark"></i>
-                  <h2>Оставьте ваши данные, мы с Вами свяжемся!</h2>
-                  <label for="name">Ваше имя:</label>
-                  <input
-                    type="name"
-                    naem="name"
-                    placeholder="Дмитрий"
-                    pattern="[A-Za-zА-Яа-я]+"
-                  />
-                  <label for="phone">Ваш номер телефона:</label>
-                  <input
-                    class="art-stranger"
-                    type="tel"
-                    name="phone"
-                    placeholder="+7(924)548-12-54"
-                  />
-                  <label for="days">Кол-во дней аренды:</label>
-                  <input type="number" naem="days" placeholder="7" pattern="[0-9]+" />
-                  <label for="date">С какого дня:</label>
-                  <input type="date" naem="date" />
-                  <select class="selectYacht"></select>
-                  <button class="buttonForm">Отправить</button>
-                </form>
-              </div>
-              <div class="helpButton formButton helpFormOff">
-                <form class="helpForm form">
-                  <i id="closeHelp" class="fa-solid fa-xmark"></i>
-                  <h2>Оставьте ваши данные, мы с Вами свяжемся!</h2>
-                  <label for="name">Ваше имя:</label>
-                  <input
-                    type="name"
-                    naem="name"
-                    placeholder="Дмитрий"
-                    pattern="[A-Za-zА-Яа-я]+"
-                  />
-                  <label for="phone">Ваш номер телефона:</label>
-                  <input
-                    class="art-stranger"
-                    type="tel"
-                    name="phone"
-                    placeholder="+7(924)548-12-54"
-                  />
-                  <button class="buttonForm">Отправить</button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div id="parking">
-            <div class="imgBackground">
-              <img src="./img/parking.png" />
-            </div>
-            <div class="colorBackgraundBlack"></div>
-            <div class="headerBlock headerBlockParking">
-              <h2>Стоянка яхт и катеров</h2>
-              <div></div>
-              <p>
-                Полный комплекс услуг по стоянке и обслуживанию водной-спортивной техники
-              </p>
-            </div>
-            <div class="parkingMain">
-              <div class="infoParking">
-                <div class="infoParking-logo-block">
-                  <div class="infoParking-logo">
-                    <div class="infoParking-logo-img">
-                      <img src="./img/Admiral.svg" alt="Admiral" />
-                    </div>
-                    <div class="infoParking-logo-p">
-                      <p>Квалифицированный персонал</p>
-                    </div>
-                  </div>
-                  <div class="infoParking-logo">
-                    <div class="infoParking-logo-img">
-                      <img src="./img/ParkingWinter.svg" alt="ParkingWinter" />
-                    </div>
-                    <div class="infoParking-logo-p">
-                      <p>Зимняя стоянка техники</p>
-                    </div>
-                  </div>
-                  <div class="infoParking-logo">
-                    <div class="infoParking-logo-img">
-                      <img src="./img/ParkingSummer.svg" alt="ParkingSummer" />
-                    </div>
-                    <div class="infoParking-logo-p">
-                      <p>Площадь гавани более 20 тыс.м2</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="infoParking-text">
-                  <p>
-                    Марина Яхт-клуба Azure Horizons рассчитана на 170 судов размером от 5
-                    до 50 м. Глубина марины – от 2 до 8 метров, что позволяет принимать
-                    суда даже с большой осадкой. Причальные сооружения размещены таким
-                    образом, что позволяют осуществлять маневрирование внутри гавани даже
-                    неподготовленным судоводителям. Собственный подъемный кран позволяет
-                    осуществлять спуски и подъемы катеров и яхт водоизмещением до 100
-                    тонн.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="restaurant">
-          <div class="restaurant-info">
-            <div class="restaurant-info-text">
-              <div class="headerBlock headerBlockRestaurant">
-                <h2>Ресторан</h2>
-                <div></div>
-              </div>
-              <p>
-                Здесь можно удобно усесться на плетеном диване и наслаждаться природой.
-                Благодаря высоким потолкам и большим окнам в ресторане просторно и светло
-                днем, а на отделанной деревом террасе уютно осенними вечерами. Это место,
-                откуда не хочется уходить. Во время летнего сезона гости могут погреться
-                на солнце, разместившись на ресторанном пляже, насладиться видом
-                покачивающихся на волнах яхт, посмотреть выступление музыкантов на
-                специальной плавучей сцене.
-              </p>
-            </div>
-
-            <div class="restaurant-info-img">
-              <img src="./img/restaurant.jpg" alt="ресторан" />
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div id="aboutUs">
-      <div class="headerBlock headerBlockAboutUs">
-        <h2>О нас</h2>
-        <div></div>
       </div>
-      <div class="aboutUs-container">
-        <div class="aboutUs-container-1 aboutUs-container-info">
-          <div class="aboutUs-container-text">
-            <h3>Более 4000 предложений в одном месте</h3>
+      <div id="rent">
+        <div class="headerBlock headerBlockRent">
+          <h2>Аренда яхт</h2>
+          <div></div>
+        </div>
+        <div class="mainBlockRent">
+          <div class="blockRent">
+            <i id="left" class="fa-solid fa-chevron-left"></i>
+            <div class="infoRent"></div>
+            <i id="right" class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="blockButton">
+          <button type="button" onclick="rent()">Аренда</button>
+          <button type="button" onclick="help()">Помощь</button>
+          <div class="rentButton formButton rentFormOff">
+            <form class="rentForm form">
+              <i id="closeRent" class="fa-solid fa-xmark"></i>
+              <h2>Оставьте ваши данные, мы с Вами свяжемся!</h2>
+              <label for="name">Ваше имя:</label>
+              <input
+                type="name"
+                naem="name"
+                placeholder="Дмитрий"
+                pattern="[A-Za-zА-Яа-я]+"
+              />
+              <label for="phone">Ваш номер телефона:</label>
+              <input
+                class="art-stranger"
+                type="tel"
+                name="phone"
+                placeholder="+7(924)548-12-54"
+              />
+              <label for="days">Кол-во дней аренды:</label>
+              <input type="number" naem="days" placeholder="7" pattern="[0-9]+" />
+              <label for="date">С какого дня:</label>
+              <input type="date" naem="date" />
+              <select class="selectYacht"></select>
+              <button class="buttonForm">Отправить</button>
+            </form>
+          </div>
+          <div class="helpButton formButton helpFormOff">
+            <form class="helpForm form">
+              <i id="closeHelp" class="fa-solid fa-xmark"></i>
+              <h2>Оставьте ваши данные, мы с Вами свяжемся!</h2>
+              <label for="name">Ваше имя:</label>
+              <input
+                type="name"
+                naem="name"
+                placeholder="Дмитрий"
+                pattern="[A-Za-zА-Яа-я]+"
+              />
+              <label for="phone">Ваш номер телефона:</label>
+              <input
+                class="art-stranger"
+                type="tel"
+                name="phone"
+                placeholder="+7(924)548-12-54"
+              />
+              <button class="buttonForm">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="parking">
+        <div class="imgBackgroundParking">
+          <img src="./img/parking.png" />
+        </div>
+        <div class="colorBackgraundBlack"></div>
+        <div class="headerBlock headerBlockParking">
+          <h2>Стоянка яхт и катеров</h2>
+          <div></div>
+          <p>Полный комплекс услуг по стоянке и обслуживанию водной-спортивной техники</p>
+        </div>
+        <div class="parkingMain">
+          <div class="infoParking">
+            <div class="infoParking-logo-block">
+              <div class="infoParking-logo">
+                <div class="infoParking-logo-img">
+                  <img src="./img/Admiral.svg" alt="Admiral" />
+                </div>
+                <div class="infoParking-logo-p">
+                  <p>Квалифицированный персонал</p>
+                </div>
+              </div>
+              <div class="infoParking-logo">
+                <div class="infoParking-logo-img">
+                  <img src="./img/ParkingWinter.svg" alt="ParkingWinter" />
+                </div>
+                <div class="infoParking-logo-p">
+                  <p>Зимняя стоянка техники</p>
+                </div>
+              </div>
+              <div class="infoParking-logo">
+                <div class="infoParking-logo-img">
+                  <img src="./img/ParkingSummer.svg" alt="ParkingSummer" />
+                </div>
+                <div class="infoParking-logo-p">
+                  <p>Площадь гавани более 20 тыс.м2</p>
+                </div>
+              </div>
+            </div>
+            <div class="infoParking-text">
+              <p>
+                Марина Яхт-клуба Azure Horizons рассчитана на 170 судов размером от 5 до
+                50 м. Глубина марины – от 2 до 8 метров, что позволяет принимать суда даже
+                с большой осадкой. Причальные сооружения размещены таким образом, что
+                позволяют осуществлять маневрирование внутри гавани даже неподготовленным
+                судоводителям. Собственный подъемный кран позволяет осуществлять спуски и
+                подъемы катеров и яхт водоизмещением до 100 тонн.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="restaurant">
+        <div class="restaurant-info">
+          <div class="restaurant-info-text">
+            <div class="headerBlock headerBlockRestaurant">
+              <h2>Ресторан</h2>
+              <div></div>
+            </div>
             <p>
-              У нас есть доступ к единой базе , в которой содержатся тысячи предложений
-              аренды яхт по всей стране с онлайн-подтвержением бронирования
+              Здесь можно удобно усесться на плетеном диване и наслаждаться природой.
+              Благодаря высоким потолкам и большим окнам в ресторане просторно и светло
+              днем, а на отделанной деревом террасе уютно осенними вечерами. Это место,
+              откуда не хочется уходить. Во время летнего сезона гости могут погреться на
+              солнце, разместившись на ресторанном пляже, насладиться видом покачивающихся
+              на волнах яхт, посмотреть выступление музыкантов на специальной плавучей
+              сцене.
             </p>
           </div>
-          <img src="./img/listIcon.svg" alt="logo" />
-        </div>
-        <div class="aboutUs-container-2 aboutUs-container-info">
-          <div class="aboutUs-container-text">
-            <h3>Весь процесс бронирования за 5 минут</h3>
-            <p>
-              Вы можете забронировать яхту самостоятельно. После заполнения формы
-              происходить резервирование на 7 дней с фиксацией стоимости и даты. Что бы
-              осуществить окончательное бронирование от Вас потребуется внести 50%
-              стоимости.
-            </p>
+
+          <div class="restaurant-info-img">
+            <img src="./img/restaurant.jpg" alt="ресторан" />
           </div>
-          <img src="./img/confirmIcon.svg" alt="logo" />
         </div>
-        <div class="aboutUs-container-3 aboutUs-container-info">
-          <div class="aboutUs-container-text">
-            <h3>Ответим на вопросы и поможем с выбором</h3>
-            <p>
-              Что больше подойдет для путешествия: парусник, катаморан или моторная яхта?
-              Расскажем все и поможем с выбором яхты для путешествия.
-            </p>
+      </div>
+      <div id="aboutUs">
+        <div class="headerBlock headerBlockAboutUs">
+          <h2>О нас</h2>
+          <div></div>
+        </div>
+        <div class="aboutUs-container">
+          <div class="aboutUs-container-1 aboutUs-container-info">
+            <div class="aboutUs-container-text">
+              <h3>Более 4000 предложений в одном месте</h3>
+              <p>
+                У нас есть доступ к единой базе , в которой содержатся тысячи предложений
+                аренды яхт по всей стране с онлайн-подтвержением бронирования
+              </p>
+            </div>
+            <img src="./img/listIcon.svg" alt="logo" />
           </div>
-          <img src="./img/helpIcon.svg" alt="logo" />
-        </div>
-        <div class="aboutUs-container-4 aboutUs-container-info">
-          <div class="aboutUs-container-text">
-            <h3>Онлайн подтверждение брони</h3>
-            <p>
-              Все взаимодействия проиходят онлайн, Вам никуда не нужно ехать или звонить.
-              Консультация нашего специалиста является необязательной, но мы в любой
-              момент готовы придти на помощь, даже во время путешествия.
-            </p>
+          <div class="aboutUs-container-2 aboutUs-container-info">
+            <div class="aboutUs-container-text">
+              <h3>Весь процесс бронирования за 5 минут</h3>
+              <p>
+                Вы можете забронировать яхту самостоятельно. После заполнения формы
+                происходить резервирование на 7 дней с фиксацией стоимости и даты. Что бы
+                осуществить окончательное бронирование от Вас потребуется внести 50%
+                стоимости.
+              </p>
+            </div>
+            <img src="./img/confirmIcon.svg" alt="logo" />
           </div>
-          <img src="./img/reservationIcon.svg" alt="logo" />
-        </div>
-        <div class="aboutUs-container-logo">
-          <img src="./img/aboutUsLogo.svg" alt="logo" />
+          <div class="aboutUs-container-3 aboutUs-container-info">
+            <div class="aboutUs-container-text">
+              <h3>Ответим на вопросы и поможем с выбором</h3>
+              <p>
+                Что больше подойдет для путешествия: парусник, катаморан или моторная
+                яхта? Расскажем все и поможем с выбором яхты для путешествия.
+              </p>
+            </div>
+            <img src="./img/helpIcon.svg" alt="logo" />
+          </div>
+          <div class="aboutUs-container-4 aboutUs-container-info">
+            <div class="aboutUs-container-text">
+              <h3>Онлайн подтверждение брони</h3>
+              <p>
+                Все взаимодействия проиходят онлайн, Вам никуда не нужно ехать или
+                звонить. Консультация нашего специалиста является необязательной, но мы в
+                любой момент готовы придти на помощь, даже во время путешествия.
+              </p>
+            </div>
+            <img src="./img/reservationIcon.svg" alt="logo" />
+          </div>
+          <div class="aboutUs-container-logo">
+            <img src="./img/aboutUsLogo.svg" alt="logo" />
+          </div>
         </div>
       </div>
     </div>

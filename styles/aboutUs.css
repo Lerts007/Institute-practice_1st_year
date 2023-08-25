@@ -2,7 +2,6 @@
   position: relative;
   z-index: 5;
   width: 100vw;
-  height: 650px;
   padding: 20px;
   background: #fff;
 }
@@ -13,8 +12,8 @@
 
 .aboutUs-container {
   display: grid;
-  grid-template-columns: 500px 200px 500px;
-  grid-template-rows: repeat(2, 200px);
+  grid-template-columns: 550px 200px 550px;
+  grid-template-rows: repeat(2, 250px);
   align-items: center;
   justify-items: center;
   justify-content: center;
@@ -44,8 +43,45 @@
 .aboutUs-container-info p {
   font-size: 18px;
   text-align: justify;
+  font-style: italic;
 }
 .aboutUs-container-logo {
   grid-column: 2 / 2;
   grid-row: 1 / span 2;
+}
+
+@media screen and (max-width: 1400px) {
+  .aboutUs-container {
+    grid-template-columns: calc(100vw * 0.4) 10px calc(100vw * 0.4);
+  }
+  .aboutUs-container-info h3 {
+    font-size: 16px;
+  }
+  .aboutUs-container-info p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #aboutUs {
+  }
+  .aboutUs-container-logo {
+    display: none;
+  }
+  .aboutUs-container {
+    grid-template-columns: calc(100vw * 0.8);
+    grid-template-rows: 160px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .aboutUs-container-info h3 {
+    font-size: 14px;
+  }
+  .aboutUs-container-info p {
+    font-size: 12px;
+  }
+  .aboutUs-container-info img {
+    width: 25px;
+    height: 25px;
+  }
 }
