@@ -52,7 +52,7 @@
 }
 @media screen and (max-width: 900px) {
   #restaurant {
-    height: 500px;
+    height: 350px;
   }
   .restaurant-info {
     justify-content: center;
@@ -63,6 +63,10 @@
   }
   .restaurant-info-img {
     display: none;
+  }
+  .restaurant-info-text p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 }
 

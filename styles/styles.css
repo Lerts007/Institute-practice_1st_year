@@ -4,8 +4,7 @@
   --headerText-color: #fff;
   --rentBackground-color: #fff;
   --mobalMenuBackground-color: #4c5253;
-  /* --background-color: linear-gradient(180deg, #4c5253 0%, #66c1d8 100%); */
-  --background-color: linear-gradient(180deg, #5c6b6e 0%, #63d8f5 100%);
+  --background-color: #5c9dac;
   --backgroundModal-color: #101218;
   --rentBlock-color: linear-gradient(
     180deg,
@@ -38,16 +37,6 @@ html {
 /*Скрыл все полосы прокрутки*/
 ::-webkit-scrollbar {
   display: none;
-}
-
-.backgroungColorPage {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 400vh;
-  background: var(--background-color);
 }
 
 button,
@@ -140,18 +129,12 @@ h2 {
   background-color: var(--button-color);
 }
 @media screen and (max-height: 850px) {
-  .backgroungColorPage {
-    height: calc(890px + 850px * 3);
-  }
   #sectionStart {
     height: 850px;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .backgroungColorPage {
-    height: calc(850px * 4);
-  }
   #sectionStart {
     height: 850px;
   }
@@ -163,6 +146,15 @@ h2 {
   }
   h2 {
     font-size: 4rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #sectionStart {
+    align-items: flex-start;
+  }
+  .sectionStart-h1 {
+    margin-top: 150px;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 650px) {

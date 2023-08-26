@@ -12,8 +12,8 @@
 
 .aboutUs-container {
   display: grid;
-  grid-template-columns: 550px 200px 550px;
-  grid-template-rows: repeat(2, 250px);
+  grid-template-columns: 650px 100px 650px;
+  grid-template-rows: repeat(2, 200px);
   align-items: center;
   justify-items: center;
   justify-content: center;
