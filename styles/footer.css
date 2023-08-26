@@ -1,7 +1,35 @@
 #footer {
   width: 100vw;
+  padding: 10px;
   background: #1a2427;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-info li,
+.footer-contact li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+.footer-info li:last-child,
+.footer-contact li:last-child {
+  margin-bottom: 0;
+}
+.footer-info a,
+.footer-contact a {
+  text-decoration: none;
+  color: var(--textModal-color);
+  font-size: 2rem;
+}
+.footer-info a:hover,
+.footer-contact a:hover {
+  color: var(--textHover-color);
+  border-bottom: 2px solid var(--textHover-color);
 }
 #footer i {
-  font-size: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.footer-info i {
+  font-size: 1rem;
 }
