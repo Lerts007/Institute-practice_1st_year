@@ -1,6 +1,6 @@
 #aboutUs {
   position: relative;
-  z-index: 5;
+  z-index: -1;
   width: 100vw;
   padding: 20px;
   background: #fff;
