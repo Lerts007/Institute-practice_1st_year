@@ -1,5 +1,7 @@
 /* restaurant */
 #restaurant {
+  position: relative;
+  z-index: -1;
   width: 100vw;
   height: 100vh;
   background: #fff;
@@ -19,6 +21,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .restaurant-info-text p {
   font-size: 2rem;
@@ -37,6 +40,13 @@
   height: 100%;
   object-fit: cover;
 }
+#restaurant button {
+  margin-top: 20px;
+  min-width: 180px;
+  width: 15vw;
+  max-width: 200px;
+  height: 50px;
+}
 
 @media screen and (max-width: 1100px) {
   #restaurant {
@@ -52,7 +62,7 @@
 }
 @media screen and (max-width: 900px) {
   #restaurant {
-    height: 350px;
+    height: 400px;
   }
   .restaurant-info {
     justify-content: center;
@@ -77,5 +87,18 @@
   .restaurant-info-text p {
     font-size: 1.5rem;
     line-height: 1.5rem;
+  }
+  #restaurant button {
+    height: 40px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #restaurant {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 350px) {
+  #restaurant {
+    height: 500px;
   }
 }

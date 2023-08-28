@@ -18,9 +18,13 @@
 
 .form {
   position: relative;
+  z-index: 6;
   padding: 20px;
   width: 50vw;
+  min-width: 300px;
+
   max-width: 650px;
+  min-height: 300px;
   height: 75vh;
   max-height: 650px;
   display: flex;
@@ -48,7 +52,7 @@
   width: 90%;
   height: 8%;
   font-family: "Merriweather", serif;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--textModal-color);
   border: 0;
@@ -76,10 +80,10 @@
 
 .selectYacht {
   width: 90%;
-  height: 10%;
+  height: 8%;
   margin-top: 25px;
   font-family: "Merriweather", serif;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--textModal-color);
   cursor: pointer;
@@ -93,11 +97,21 @@
 }
 
 .selectYacht option {
-  background-color: #0f1443;
+  background-color: var(--backgroundModal-color);
   border: 0;
 }
 
 .selectYacht option:focus {
   border: none;
   border-bottom: 2px solid #fff;
+}
+@media screen and (max-width: 650px) {
+  .form h2 {
+    font-size: 24px;
+  }
+  .formButton input,
+  .selectYacht {
+    height: 25px;
+    font-size: 1.5rem;
+  }
 }

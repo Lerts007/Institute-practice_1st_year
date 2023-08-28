@@ -59,7 +59,6 @@
 
 .infoRent {
   position: relative;
-  /* width: 70%; */
   width: calc(100vw * 0.7);
   height: 500px;
   margin: 40px;
@@ -117,7 +116,7 @@
   font-style: italic;
 }
 .blockButton {
-  margin-top: 5vh;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
