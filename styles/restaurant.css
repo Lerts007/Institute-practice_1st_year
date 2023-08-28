@@ -89,7 +89,8 @@
     line-height: 1.5rem;
   }
   #restaurant button {
-    height: 40px;
+    height: 30px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 550px) {
