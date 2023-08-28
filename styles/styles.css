@@ -101,6 +101,15 @@ button:first-child {
   letter-spacing: 0.5rem;
   text-shadow: 5px 5px #4d6d78;
 }
+.anim {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 2s ease 0s;
+}
+.animActiv {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
 
 /* sectionServices */
 

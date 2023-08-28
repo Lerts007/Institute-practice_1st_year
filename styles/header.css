@@ -44,6 +44,8 @@
 
   font-size: 18px;
   color: var(--headerText-color);
+  transition-duration: 1s, 100ms;
+  transition-property: color, border-bottom;
 }
 #nav-bar a:hover {
   color: var(--textHover-color);
