@@ -82,6 +82,7 @@
   z-index: 1;
   cursor: pointer;
   min-width: calc((100% / 3) - 20px);
+  max-width: 400px;
   height: 100%;
   padding: 20px;
   margin-right: 20px;
@@ -117,6 +118,7 @@
 }
 .blockButton {
   margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
